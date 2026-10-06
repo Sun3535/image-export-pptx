@@ -7,6 +7,7 @@ name = "pptx2tif"
 version = "0.1.0"
 description = "Extract every image in a .pptx as a lossless, full-resolution TIFF"
 readme = "README.md"
+license = "MIT"
 requires-python = ">=3.10"
 dependencies = [
     "python-pptx>=1.0",

@@ -83,3 +83,6 @@ PowerPoint는 저장할 때 기본 설정으로 이미지를 압축해요(220ppi
 pytest                                       # 자동 테스트
 python samples/verify.py 내덱.pptx           # 실제 pptx로 원본(samples/originals)과 픽셀 비교
 ```
+
+## 라이선스
+[MIT](LICENSE): 누구나 자유롭게 사용, 수정, 배포할 수 있어요.
