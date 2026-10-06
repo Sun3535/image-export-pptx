@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pptx2tif"
+version = "0.1.0"
+description = "Extract every image in a .pptx as a lossless, full-resolution TIFF"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "python-pptx>=1.0",
+    "Pillow>=10.0",
+    "numpy>=1.24",
+    "tifffile>=2023.1.0",
+    "pypng>=0.20220715.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.scripts]
+pptx2tif = "pptx2tif.cli:main"
+
+[project.gui-scripts]
+pptx2tif-gui = "pptx2tif.gui:main"
+
+[tool.setuptools]
+packages = ["pptx2tif"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
